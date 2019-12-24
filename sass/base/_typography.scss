@@ -1,0 +1,77 @@
+.heading1 {
+  &__title {
+    color: $primary;
+    font-weight: 900;
+    font-size: 3.5rem;
+    border-left: 8px solid $secondary;
+    padding-left: 2rem;
+  }
+}
+
+.heading2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 0 3rem 0;
+  &__subtitle {
+      color: $subtitle-color;
+  }
+  &__title {
+    color: $primary;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .separator {
+    height: .3rem;
+    width: 6rem;
+    background-color: $secondary;
+  }
+}
+
+.heading3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0 2.5rem 0;
+  text-align: center;
+  &__subtitle {
+      color: #eee;
+      font-weight: 700;
+  }
+  &__title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    @include respond(tab-land) {
+      font-size: 3.5rem;
+    }
+
+  }
+  .separator {
+    height: .4rem;
+    width: 6rem;
+    background-color: $secondary;
+    margin: auto;
+  }
+}
+
+.heading4{
+  text-align: center;
+  color: $primary;
+  font-weight: 900;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+}
+

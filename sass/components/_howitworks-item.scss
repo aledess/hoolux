@@ -1,0 +1,64 @@
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  @include respond(tab-land) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.item {
+  padding: 2rem;
+  &__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    img {
+      width: 30rem;
+        @include respond(tab-land) {
+          width: 25rem;
+        }
+        @include respond(phone) {
+          width: 20rem;
+        }
+    }
+  }
+  &__title {
+    font-size: 2.3rem;
+    text-align: center;
+    color: $primary;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  &__text {
+    text-align: center;
+    font-size: 1.8rem;
+    height: 10rem;
+    color: $subtitle-color;
+    @include respond(tab-land) {
+      font-size: 1.6rem;
+      height: auto;
+
+    }
+    @include respond(phone) {
+      font-size: 1.4rem;
+      height: auto;
+
+    }
+  }
+}

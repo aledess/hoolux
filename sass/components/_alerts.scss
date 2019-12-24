@@ -1,0 +1,39 @@
+.message {
+  padding: 1.5rem;
+  height: 7rem;
+  border-radius: 0.5rem;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  width: 100%;
+  z-index: 400;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: fixed;
+  
+  p {
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    @include respond(tab-land) {
+      text-align: left;
+      font-size: 1.5;
+
+
+    }
+    @include respond(phone) {
+      text-align: left;
+      font-size: 1.4;
+
+
+    }
+  }
+  &--success {
+    background-color: #1dd1a1
+  }
+
+  &--error {
+    background-color: #ff6b6b;
+  }
+}

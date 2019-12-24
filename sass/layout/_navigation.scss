@@ -1,0 +1,67 @@
+.navigation {
+  background: $primary;
+  padding: 1rem 3rem;
+  top:0;
+  left:0;
+  z-index: 200;
+  position: fixed;
+  width: 100%;
+
+  .site-logo{
+    width: 15rem;
+    
+  }
+  .main-menu {
+    @include respond(tab-land) {
+      background: $primary;
+    }
+    &__item {
+      font-size: 1.3rem;
+      letter-spacing: 0.1rem;
+      color: #fff;
+      font-weight: 600;
+
+      @include respond(tab-land) {
+        // border-bottom: 1px solid rgba($color: $tertiary, $alpha: 0.1);
+        width: 80%;
+        text-align: center;
+        margin: auto auto;
+      }
+      @include respond(tab-land-xl) {
+        letter-spacing: 0;
+
+        font-size: 1.2rem;
+      }
+
+      @include respond(phone) {
+        letter-spacing: 0;
+        font-size: 1.2rem;
+      }
+    }
+    &__link {
+      text-decoration: none;
+      color: #fff;
+      -webkit-transition: .5s color;
+      transition: .5s color;
+      &:hover{
+        color: $secondary;
+      }
+
+      @include respond(tab-land) {
+        letter-spacing: 0.3rem;
+      }
+    }
+  }
+}
+
+.nav-button {
+  span {
+    display: block;
+    height: 2px;
+    width: 3rem;
+    background: white;
+  }
+  span:not(:last-child) {
+    margin-bottom: 7px;
+  }
+}

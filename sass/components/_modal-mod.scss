@@ -1,0 +1,19 @@
+.modal-mod{
+    &__header{
+        font-size: 1.4rem;
+        border-bottom: 1px solid $secondary;
+    }
+
+    &__body{
+        padding: 2rem;
+
+       p{
+        font-size: 1.1rem;
+
+       }
+
+
+    }
+
+  
+}
